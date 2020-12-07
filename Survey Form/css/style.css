@@ -6,7 +6,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url(../img/Sweet.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/Sweet.jpg) no-repeat center center/cover;
   height: 100%;
   width: 100%;
 }
@@ -51,16 +52,17 @@ body {
   margin-top: 10px;
 }
 
-.background-blur {
+/* .background-blur {
   height: 100%;
   background: rgba(0, 0, 0, 0.45);
-}
+} */
 
 .form-group #name,
 .form-group #email,
 .form-group #number,
 .form-group #message,
-.form-group #submit {
+.form-group #submit,
+.form-group #dropdown {
   width: 100%;
   padding: 0.5rem 0;
   border-radius: 5px;
@@ -78,4 +80,8 @@ body {
 
 .form-group #submit:hover {
   background: #4caf50;
+}
+
+.form-group {
+  line-height: 1.5;
 }
