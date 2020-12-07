@@ -80,6 +80,8 @@ a {
   flex-direction: column;
   margin: 0 40rem;
   padding-bottom: 2rem;
+  /* max-width: 960px;
+  margin: auto; */
 }
 
 #timeline .list .item {
@@ -108,4 +110,39 @@ a {
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 500px) {
+  #timeline .list ul {
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  #showcase {
+    background: black;
+    height: 100vh;
+    color: white;
+  }
+
+  #showcase .l-heading {
+    font-size: 50px;
+    padding-bottom: 0.45rem;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  #timeline .list ul {
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  #showcase {
+    background: black;
+    height: 100vh;
+    color: white;
+  }
 }
