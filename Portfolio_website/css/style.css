@@ -1,0 +1,126 @@
+/* Reset  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility classes */
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+.l-heading {
+  font-size: 4rem;
+}
+
+.l-1-heading {
+  font-size: 3rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+  color: black;
+}
+/* navbar */
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex h1 {
+  padding: 1rem;
+}
+
+.flex .nav-link {
+  padding: 1rem;
+}
+
+.flex .nav-link a {
+  padding: 1rem;
+  color: black;
+}
+
+.flex .nav-link a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Welcome Section */
+#welcome-section {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  line-height: 1.1;
+}
+
+#welcome-section .content-left,
+#welcome-section .content-right {
+  flex: 1;
+}
+
+#welcome-section .personal-link a {
+  color: black;
+  padding-right: 1.5rem;
+}
+
+#welcome-section .personal-link a:hover {
+  color: #007acc;
+}
+
+/* About Me */
+#about-me {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  line-height: 1.1;
+}
+
+#about-me #about-left,
+#about-me #about-right {
+  flex: 1;
+}
+
+#about-me #about-right h1,
+#about-me #about-right p {
+  line-height: 1.2;
+}
+
+/* skills */
+#skills h1 {
+  margin: 1.5rem 0;
+}
+
+.skills-img img {
+  margin: 0 2rem;
+  width: 144px;
+  height: 144px;
+}
+
+/* projects */
+.project-title {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.card a {
+  color: #333;
+}
