@@ -44,6 +44,12 @@ h3 {
 header .flex {
   display: flex;
   justify-content: space-between;
+  /* for sticky navbar */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; */
 }
 
 .flex h1 {
@@ -115,12 +121,222 @@ header .flex {
   height: 144px;
 }
 
+.skills-img {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
 /* projects */
 .project-title {
   margin-top: 4rem;
   padding-bottom: 2rem;
 }
 
-.card a {
-  color: #333;
+.wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.card .card-pong {
+  height: 400px;
+}
+
+.card .card-style {
+  width: 600px;
+  height: 400px;
+}
+.card {
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card p {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+.card p a {
+  color: black;
+}
+
+.card p a:hover {
+  color: black;
+  text-decoration: underline;
+}
+/* Contact */
+#contact h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#contact label {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+#contact .submit {
+  padding-top: 1rem;
+}
+
+#contact input {
+  padding: 0.5rem;
+  width: 100%;
+  border: #555 solid 0.5px;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  border: #555 solid 0.5px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#contact .submit input {
+  border: none;
+  color: #fff;
+  background-color: #007acc;
+  padding: 0.7rem 0;
+}
+
+#contact .submit input:hover {
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  background-color: #333;
+  margin-top: 2rem;
+  overflow: auto;
+  height: 25vh;
+}
+#footer h1 {
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-top: 3.5rem;
+}
+
+#footer .personal-link a {
+  color: white;
+  padding: 1rem;
+}
+
+#footer .personal-link {
+  display: flex;
+  justify-content: center;
+}
+
+/* End footer  */
+#end-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 500px) {
+  /* navbar */
+  header .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex h1 {
+    text-align: center;
+  }
+
+  .flex .nav-link {
+    margin-left: 1rem;
+  }
+
+  .flex .nav-link a {
+    padding: 0.65rem;
+  }
+
+  /* welcome-section */
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #welcome-section .content-right {
+    display: none;
+  }
+
+  #welcome-section .content-left {
+    padding: 1rem;
+    margin-top: 6rem;
+  }
+
+  /* About me */
+  #about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-me #about-left {
+    display: none;
+  }
+
+  #about-me #about-right {
+    padding: 2rem;
+    margin-top: 9rem;
+  }
+
+  /* skills */
+  #skills h1 {
+    padding-left: 2rem;
+  }
+
+  .skills-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-img img {
+    padding: 1rem 1rem;
+    margin-right: 0.5rem;
+  }
+
+  /* project */
+  .card .card-style {
+    width: 300px;
+    height: 200px;
+  }
+  .card .card-pong {
+    width: 300px;
+    height: 200px;
+  }
+  .card img {
+    margin-left: 3rem;
+  }
+
+  .card p {
+    margin-right: 12rem;
+  }
+  /* contact */
+  #contact h1 {
+    text-align: center;
+  }
+
+  #contact input,
+  #contact label,
+  #contact textarea {
+    max-width: 350px;
+    margin-left: 1rem;
+  }
+  /* footer */
+  #footer h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+  }
 }
