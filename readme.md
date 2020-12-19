@@ -15,25 +15,12 @@ course link 👉 [click here](https://www.freecodecamp.org/learn/)
 
 ## 1) Tribute Website
 
----
-
 <br>
 
 ![Tribute website](./gif/Tribute-website.gif)
 <br>
 
 ## 2) Survey form
-
----
-
-<br>
-
-![survey form](./gif/survey-form.gif)
-<br>
-
-## 2) Survey form
-
----
 
 <br>
 
@@ -42,8 +29,6 @@ course link 👉 [click here](https://www.freecodecamp.org/learn/)
 
 ## 3) Product Landing Page
 
----
-
 <br>
 
 ![product landing page](./gif/product-landing-page.gif)
@@ -51,16 +36,12 @@ course link 👉 [click here](https://www.freecodecamp.org/learn/)
 
 ## 4) Technical Documentation Form
 
----
-
 <br>
 
 ![technical documentation form](./gif/technical-page.gif)
 <br>
 
 ## 5) Portfolio Website
-
----
 
 <br>
 
